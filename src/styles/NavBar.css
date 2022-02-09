@@ -1,0 +1,100 @@
+.nav-bar {
+    background: #132246; 
+	height: 130px;
+    width:100%;
+    position: fixed;
+    z-index: 999;
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar  nav  ul{
+    text-align: center;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+
+}
+
+.nav-bar nav ul li {
+    display: inline-block;
+	width: 10%;
+	list-style: none;
+	vertical-align: middle;
+	margin: 0 20px;
+}
+
+.nav-images{
+    width: 60%;
+	margin: 10px auto;
+}
+
+.nav-bar nav ul li a {
+    text-decoration: none;
+	color: #fff;
+	font-family: "Cocon-Bold";
+	font-size: 1em;
+}
+
+.nav-bar a:hover {
+    border-bottom: rebeccapurple;
+}
+
+.nav-bar .MobileNavigation{
+    display: none;
+}
+
+@media(max-width: 990px){
+    .nav-bar{
+        display: flex;
+		align-items: center;
+        background: none;
+		
+    }
+    .nav-bar .Navigation{
+        display: none;
+    }
+
+    .nav-bar .MobileNavigation{
+        display: flex;
+        align-items: center;
+
+    }
+
+    .nav-bar .MobileNavigation .hamburger{
+        position: absolute;
+        right:5%;
+        cursor:pointer;
+    }
+
+    .nav-bar nav ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 130px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        background: #1f4486;
+        transition: all 0.5s ease;
+		
+    }
+
+    .nav-bar nav ul li {
+        padding: 20px 0px;
+		width: 100%;
+		align-self: center;
+
+    }
+
+    .nav-bar nav ul li:hover{
+         background: #3a79b3;
+    }
+
+    .hope-logo{
+        width: 12%;
+        margin-left: 10%;
+    }
+ }
